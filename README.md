@@ -1,1 +1,1 @@
-可以用于调用替换大批量switchcase
+可以用于替换大批量switchcase
