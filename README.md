@@ -1,1 +1,1 @@
-# AutoJump
+可以用于调用替换大批量switchcase
