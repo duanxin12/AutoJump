@@ -1,0 +1,1 @@
+include ':app', ':dispatch-annotation', ':dispatch-compile', ':dispatch-api', ':test', ':buildSrc'
