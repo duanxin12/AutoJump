@@ -110,6 +110,12 @@ public class DistributionCenter {
             return;
         }
 
-        mExecutorService.submit(new ExecutePipeline(dispatchs.get(dispatch), event, mDispatchListener));
+        DispatchMeta dispatchMeta = dispatchs.get(dispatch);
+        if (dispatchMeta == null) {
+            Log.w(TAG, "this dispatch meta does not exist!");
+            return;
+        }
+
+        mExecutorService.submit(new ExecutePipeline(dispatchMeta, event, mDispatchListener));
     }
 }
