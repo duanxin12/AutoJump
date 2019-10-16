@@ -39,7 +39,7 @@ public class DistributionCenter {
 
         loadDispatchMap();
         if (registerByPlugin) {
-            Log.w(TAG, "register by plugin!");
+            Log.w(TAG, "registe by plugin!");
         } else {
             List<String> classNames = ClassUtils.scanFileNameByPackageName(context, Constant.PACKAGE_OF_GENERATE_FILE);
 

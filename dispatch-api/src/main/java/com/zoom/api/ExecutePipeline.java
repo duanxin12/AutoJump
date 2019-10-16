@@ -33,11 +33,6 @@ public class ExecutePipeline implements Runnable{
 
     private void excute() {
 
-        if (dispatchMeta == null) {
-            Log.w(TAG, "this dispatchMeta is not exist!");
-            return;
-        }
-
         try {
 
             Class cls = Class.forName(dispatchMeta.getMethodAssociatedClass().getName());
